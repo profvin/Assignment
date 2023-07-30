@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Survey Form</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<a href="index.html">Home</a>
+<body>
+    <div class="container">
+        <h1>Business Survey Form</h1>
+        <form action="/submit_survey" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="company">Company Name:</label>
+            <input type="text" id="company" name="company" required>
+
+            <label for="industry">Industry:</label>
+            <select id="industry" name="industry" required>
+                <option value="" disabled selected>Select your industry</option>
+                <option value="technology">Technology</option>
+                <option value="finance">Finance</option>
+                <option value="healthcare">Healthcare</option>
+                <option value="retail">Retail</option>
+            </select>
+
+            <label for="employee-count">Number of Employees:</label>
+            <input type="number" id="employee-count" name="employee-count" required>
+
+            <label for="feedback">How satisfied are you with our services?</label>
+            <input type="radio" id="satisfied" name="feedback" value="satisfied" required>
+            <label for="satisfied">Satisfied</label>
+            <input type="radio" id="neutral" name="feedback" value="neutral" required>
+            <label for="neutral">Neutral</label>
+            <input type="radio" id="dissatisfied" name="feedback" value="dissatisfied" required>
+            <label for="dissatisfied">Dissatisfied</label>
+
+            <label for="reason">Please provide a reason for your satisfaction level:</label>
+            <textarea id="reason" name="reason" required></textarea>
+
+            <label for="improvement">What improvements would you like to see in our services?</label>
+            <textarea id="improvement" name="improvement" required></textarea>
+
+            <label for="recommend">Would you recommend our services to others?</label>
+            <input type="radio" id="yes-recommend" name="recommend" value="yes" required>
+            <label for="yes-recommend">Yes</label>
+            <input type="radio" id="no-recommend" name="recommend" value="no" required>
+            <label for="no-recommend">No</label>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    
+</body>
+</html>
